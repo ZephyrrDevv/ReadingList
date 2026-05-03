@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f4f4f4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 350px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 5px 5px 8px rgb(207, 204, 204);
+}
+
+header {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+header p {
+  color: #6b6b6b;
+  margin-bottom: 5px;
+}
+
+.input {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.input input {
+  padding: 8px 10px;
+  width: 80%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d0d0d0;
+}
+
+.input button {
+  width: 20%;
+  border-radius: 5px;
+  background: #378add;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.input button:hover {
+  transform: scale(0.92);
+}
+
+.book_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #635e5e;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 5px;
+}
+
+.total_book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #185fa5;
+  color: #e6f1fb;
+  width: auto;
+  height: 20px;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+
+.book_container {
+  padding: 10px;
+}
+
+#bookList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  color: #383535;
+}
+
+.remove {
+  padding: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #ffffff;
+  outline: none;
+  color: #6b6b6b;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+.btn:hover {
+  transform: scale(0.97);
+  background: #378add;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+  }
+}
